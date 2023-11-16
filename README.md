@@ -24,8 +24,8 @@ creating, transmitting, and auto-closing a Channel at the conclusion of the Coro
 Kotlin's [async/await](https://kotlinlang.org/docs/composing-suspending-functions.html#concurrent-using-async) allows for 
 a Coroutine to return a value.
 
-* [AsyncExample](src/main/kotlin/developerx/examples/AsyncExample.kt) demonstrates
-a Coroutine that returns a string and prints out the results of multiple invocations.
+* [AsyncExample](src/main/kotlin/developerx/examples/AsyncExample.kt) demonstrates the speed improvements of
+concurrency and shows a Coroutine wrapped in an `async` invocation that returns a value.
 
 ## Flow
 Kotlin's [flow](https://kotlinlang.org/docs/flow.html#flows) and 
