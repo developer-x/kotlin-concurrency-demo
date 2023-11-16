@@ -1,35 +1,36 @@
 # Kotlin Concurrency Examples
-The project provides small examples that illustrate different aspects of 
+This project provides small examples that illustrate different aspects of 
 [Kotlin's Concurrency Support](https://kotlinlang.org/docs/coroutines-guide.html)
 
 ## Coroutines
 [Coroutines](https://kotlinlang.org/docs/coroutines-basics.html#your-first-coroutine) is a lightweight
 concurrency framework.  A Coroutine defines an asynchronous unit of work.  Unlike 
-Native Threads, a Coroutine is not bound to particular thread - it can be started/started and assigned 
-to different threads.  The unit of work is invoked using the `launch` keyword and returns an instance of a Job to either
-cancel or wait for completion.  A Job is unable to return a value.
+Native Threads, a Coroutine is not bound to a particular thread - it can be started/started and assigned 
+to different threads.  The Coroutine is invoked using the `launch` keyword and returns an instance of a 
+[Job](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-job/) that allows 
+you to either cancel or wait for completion.  A Job is unable to return a value.
 
 * [CoroutineExample](src/main/kotlin/developerx/examples/CoroutineExample.kt)
-illustrates invocation of a suspending function within a Coroutine.
+illustrates an invocation of a suspending function within a Coroutine.
 
 ## Channel
 Kotlin Coroutines can use [Channels](https://kotlinlang.org/docs/channels.html#channel-basics) to
-transmit data between coroutines and the larger context.  
+transmit data between Coroutines and the larger context.  
 
 * [AutoCloseChannelExample](src/main/kotlin/developerx/examples/AutoCloseChannelExample.kt) demonstrates
 creating, transmitting, and auto-closing a Channel at the conclusion of the Job. 
 
 ## Async/Await 
-Kotlin's [async/await](https://kotlinlang.org/docs/composing-suspending-functions.html#concurrent-using-async) allows for a unit or work to return
-a value.
+Kotlin's [async/await](https://kotlinlang.org/docs/composing-suspending-functions.html#concurrent-using-async) allows for 
+an asynchronous unit or work to return a value.
 
 * [AsyncExample](src/main/kotlin/developerx/examples/AsyncExample.kt) demonstrates
-an asynchronous unit of work which returns a string and prints out the results of multiple invocations.
+an asynchronous unit of work that returns a string and prints out the results of multiple invocations.
 
 ## Flow
 Kotlin's [flow](https://kotlinlang.org/docs/flow.html#flows) and 
 [channelFlow](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/channel-flow.html) framework provides the ability for an asynchronous unit of work to transmit
-an interruptible stream of data between asynchronous units of work
+an interruptible stream of data.
 
 * [FlowExample](src/main/kotlin/developerx/examples/FlowExample.kt) demonstrates a single Flow based stream of data 
 * [ChannelFlowExample](src/main/kotlin/developerx/examples/ChannelFlowExample.kt) demonstrates
