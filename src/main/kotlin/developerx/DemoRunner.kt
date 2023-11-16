@@ -3,7 +3,10 @@ package developerx
 import developerx.examples.*
 
 fun main() {
-    println("Running AsyncReturn Example...")
+    println("Running Coroutine Example...")
+    runCoroutineExample()
+
+    println("\nRunning AsyncReturn Example...")
     runAsyncReturnExample()
 
     println("\nRunning Async Example...")

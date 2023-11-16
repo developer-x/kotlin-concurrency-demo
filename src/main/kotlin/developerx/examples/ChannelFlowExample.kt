@@ -8,8 +8,8 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
 /**
- * Example of using channelFlow to conncurrently produce
- * a stream of output.
+ * Example of using channelFlow to concurrently produce
+ * multiple interruptible streams of data
  */
 @OptIn(DelicateCoroutinesApi::class)
 fun channelFlows(): Flow<Int> = channelFlow {

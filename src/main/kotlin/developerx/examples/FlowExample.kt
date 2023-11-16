@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.runBlocking
 
 /**
- * Example of using Flow to produce an interruptable Stream
+ * Example of using Flow to produce an interruptible stream of data
  */
 fun exampleFlow(): Flow<Int> = flow {
         repeat(20) {
