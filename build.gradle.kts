@@ -20,3 +20,7 @@ tasks.test {
 kotlin {
     jvmToolchain(17)
 }
+
+application {
+    mainClass = "developerx.DemoRunnerKt"
+}

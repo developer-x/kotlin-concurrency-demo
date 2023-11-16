@@ -46,3 +46,6 @@ for [Native Threading](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.concu
 Class to synchronize state access within a Coroutine
 * [SynchronizedStateExample](src/main/kotlin/developerx/examples/SynchronizedStateExample.kt) demonstration
 using the `@Synchronized` annotation to synchronize state access within Native Threading
+
+## Running the Demo
+From the command line, issue `./gradlew run`

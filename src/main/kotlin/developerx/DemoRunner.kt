@@ -6,9 +6,6 @@ fun main() {
     println("Running Coroutine Example...")
     runCoroutineExample()
 
-    println("\nRunning AsyncReturn Example...")
-    runAsyncReturnExample()
-
     println("\nRunning Async Example...")
     runAsyncExample()
 

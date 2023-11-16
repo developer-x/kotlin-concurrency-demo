@@ -31,7 +31,7 @@ fun runSynchronizedStateExample() = runBlocking {
     }
     worker1.join()
     worker2.join()
-    println("Unsychronized State is ${unSynchronizedState.state}")
+    println("Unsynchronized State is ${unSynchronizedState.state}")
 
     val synchronizedState = SynchronizedStateExample()
     val worker3 = thread(start = true)  {
@@ -42,5 +42,5 @@ fun runSynchronizedStateExample() = runBlocking {
     }
     worker3.join()
     worker4.join()
-    println("Sychronized State is ${synchronizedState.state}")
+    println("Synchronized State is ${synchronizedState.state}")
 }
