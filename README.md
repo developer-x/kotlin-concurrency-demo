@@ -18,7 +18,7 @@ Kotlin Coroutines can use [Channels](https://kotlinlang.org/docs/channels.html#c
 transmit data between Coroutines and the larger context.  
 
 * [AutoCloseChannelExample](src/main/kotlin/developerx/examples/AutoCloseChannelExample.kt) demonstrates
-creating, transmitting, and auto-closing a Channel at the conclusion of the Job. 
+creating, transmitting, and auto-closing a Channel at the conclusion of the Coroutine. 
 
 ## Async/Await 
 Kotlin's [async/await](https://kotlinlang.org/docs/composing-suspending-functions.html#concurrent-using-async) allows for 
