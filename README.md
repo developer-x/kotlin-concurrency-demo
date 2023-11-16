@@ -4,7 +4,8 @@ The project provides small examples that illustrate different aspects of
 
 ## Coroutines
 [Coroutines](https://kotlinlang.org/docs/coroutines-basics.html#your-first-coroutine) is a lightweight
-concurrency framework.  Each unit of work is not bound to particular thread - it can be started/started and assigned 
+concurrency framework.  A Coroutine defines an asynchronous unit of work.  Unlike 
+Native Threads, a Coroutine is not bound to particular thread - it can be started/started and assigned 
 to different threads.  The unit of work is invoked using the `launch` keyword and returns an instance of a Job to either
 cancel or wait for completion.  A Job is unable to return a value.
 
