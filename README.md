@@ -32,9 +32,10 @@ Kotlin's [flow](https://kotlinlang.org/docs/flow.html#flows) and
 [channelFlow](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/channel-flow.html) framework provides the ability for a Coroutine to transmit
 an interruptible stream of data.
 
-* [FlowExample](src/main/kotlin/developerx/examples/FlowExample.kt) demonstrates a single Flow based stream of data.
+* [FlowExample](src/main/kotlin/developerx/examples/FlowExample.kt) demonstrates a single
+[Flow](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/) based stream of data.
 * [ChannelFlowExample](src/main/kotlin/developerx/examples/ChannelFlowExample.kt) demonstrates
-concurrent streams of data using a ChannelFlow.
+concurrent streams of data using [channelFlow](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/channel-flow.html).
 
 ## Shared State
 Kotlin supports protecting shared state using the 
