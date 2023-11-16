@@ -1,6 +1,6 @@
 # Kotlin Concurrency Examples
 This project provides small examples that illustrate different aspects of 
-[Kotlin's Concurrency Support](https://kotlinlang.org/docs/coroutines-guide.html)
+[Kotlin's Concurrency Support](https://kotlinlang.org/docs/coroutines-guide.html).
 
 ## Coroutines
 [Coroutines](https://kotlinlang.org/docs/coroutines-basics.html#your-first-coroutine) is a lightweight
@@ -22,19 +22,19 @@ creating, transmitting, and auto-closing a Channel at the conclusion of the Coro
 
 ## Async/Await 
 Kotlin's [async/await](https://kotlinlang.org/docs/composing-suspending-functions.html#concurrent-using-async) allows for 
-an asynchronous unit or work to return a value.
+a Coroutine to return a value.
 
 * [AsyncExample](src/main/kotlin/developerx/examples/AsyncExample.kt) demonstrates
-an asynchronous unit of work that returns a string and prints out the results of multiple invocations.
+a Coroutine that returns a string and prints out the results of multiple invocations.
 
 ## Flow
 Kotlin's [flow](https://kotlinlang.org/docs/flow.html#flows) and 
-[channelFlow](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/channel-flow.html) framework provides the ability for an asynchronous unit of work to transmit
+[channelFlow](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/channel-flow.html) framework provides the ability for a Coroutine to transmit
 an interruptible stream of data.
 
-* [FlowExample](src/main/kotlin/developerx/examples/FlowExample.kt) demonstrates a single Flow based stream of data 
+* [FlowExample](src/main/kotlin/developerx/examples/FlowExample.kt) demonstrates a single Flow based stream of data.
 * [ChannelFlowExample](src/main/kotlin/developerx/examples/ChannelFlowExample.kt) demonstrates
-concurrent streams of data using a ChannelFlow
+concurrent streams of data using a ChannelFlow.
 
 ## Shared State
 Kotlin supports protecting shared state using the 
@@ -43,9 +43,9 @@ for Coroutines and the [@Synchronized Annotation](https://kotlinlang.org/api/lat
 for [Native Threading](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.concurrent/thread.html)
 
 * [MutexExample](src/main/kotlin/developerx/examples/MutexExample.kt) demonstrates using the `Mutex`
-Class to synchronize state access within a Coroutine
+Class to synchronize state access within a Coroutine.
 * [SynchronizedStateExample](src/main/kotlin/developerx/examples/SynchronizedStateExample.kt) demonstration
-using the `@Synchronized` annotation to synchronize state access within Native Threading
+using the `@Synchronized` annotation to synchronize state access within Native Threading.
 
 ## Running the Demo
-From the command line, issue `./gradlew run`
+From the command line, issue `./gradlew run`.
