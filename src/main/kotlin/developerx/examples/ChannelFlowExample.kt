@@ -12,7 +12,7 @@ import kotlinx.coroutines.runBlocking
  * multiple interruptible streams of data
  */
 @OptIn(DelicateCoroutinesApi::class)
-fun channelFlows(): Flow<Int> = channelFlow {
+fun channelFlows() = channelFlow {
     val job1 = GlobalScope.launch {
         repeat(100) {
             send(it)
